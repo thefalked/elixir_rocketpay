@@ -5,7 +5,7 @@ defmodule RocketpayWeb.AccountsView do
         account: %Account{id: id, balance: balance}
       }) do
     %{
-      message: "Deposit completed!",
+      message: "Balance changed successfully",
       account: %{
         id: id,
         balance: balance
