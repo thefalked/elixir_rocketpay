@@ -23,20 +23,11 @@ defmodule RocketpayWeb.UsersView do
     }
   end
 
-  # def render("index.json", %{
-  #       users: [%User{
-  #         id: id,
-  #         name: name,
-  #         nickname: nickname
-  #       }]
-  #     }) do
-  #   %{
-  #     message: "User created",
-  #     users: %{
-  #       id: id,
-  #       name: name,
-  #       nickname: nickname,
-  #     }
-  #   }
-  # end
+  def render("index.json", %{
+        users: []
+      }) do
+    %{
+      message: "User created",
+    }
+  end
 end
